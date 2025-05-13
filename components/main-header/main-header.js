@@ -9,10 +9,11 @@ import classes from './main-header.module.css';
 export default function MainHeader() {
     return (
         <>
-            <MainHeaderBackground />
+            <MainHeaderBackground/>
             <header className={classes.header}>
                 <Link className={classes.logo} href="/">
-                    <Image src={logoImg} alt="A plate with food on it" priority />
+                    <Image src={logoImg} alt="A plate with food on it"
+                           priority/>
                     Joe Meals
                 </Link>
                 <nav className={classes.nav}>
@@ -21,7 +22,8 @@ export default function MainHeader() {
                             <NavLink href="/meals">Browse Meals</NavLink>
                         </li>
                         <li>
-                            <NavLink href="/community">Foodies Community</NavLink>
+                            <NavLink href="/community">Foodies
+                                Community</NavLink>
                         </li>
                     </ul>
                 </nav>
